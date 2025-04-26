@@ -1,0 +1,19 @@
+CREATE TABLE obras (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  descricao TEXT,
+  status VARCHAR(50),
+  latitude DOUBLE,
+  longitude DOUBLE,
+  data_inicio DATE,
+  data_fim DATE,
+  verba VARCHAR(50),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  senha VARCHAR(50);
+  permissao VARCHAR(10)
+);
